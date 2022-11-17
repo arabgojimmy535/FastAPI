@@ -1,6 +1,6 @@
 def documentoEntidad(documento)-> dict:
     return {
-        "id": documento["id"],
+        "id": str(documento["_id"]),
         "titulo": documento["titulo"],
         "autor": documento["autor"],
         "tipo": documento["tipo"],
@@ -12,4 +12,4 @@ def documentoEntidad(documento)-> dict:
     }
 
 def documentosEntidad(documentos)-> list:
-    [documentoEntidad(documento) for documento in documentos]
+    return [documentoEntidad(documento) for documento in documentos]

@@ -1,11 +1,13 @@
 from pydantic import BaseModel
+from typing import Optional
+
 
 class documento(BaseModel):
-    titulo: str
-    autor: str
-    tipo: str
-    precio: str
-    fecha_publicacion: str
-    vendido: str
-    stock: str
-    digital: str
+    id: Optional[str]
+    titulo: Optional[str]
+    autor: Optional[str]
+    imagen: Optional[str]
+    tipo: Optional[str]
+    precio: Optional[str]
+    stock: Optional[int]
+    digital: Optional[bool]

@@ -3,10 +3,9 @@ def documentoEntidad(documento)-> dict:
         "id": str(documento["_id"]),
         "titulo": documento["titulo"],
         "autor": documento["autor"],
+        "imagen": documento["imagen"],
         "tipo": documento["tipo"],
         "precio": documento["precio"],
-        "fecha_publicacion": documento["fecha_publicacion"], 
-        "vendido": documento["vendido"],
         "stock": documento["stock"],
         "digital": documento["digital"]
     }
